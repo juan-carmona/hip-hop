@@ -1,63 +1,169 @@
-/* ========================= VARIABLES ========================= */ 
+/* ========================= VARIABLES ========================= */
 
 yellow     = #FCB932
 orange     = #CC8E29
 grey       = #63637C
 darkblue-1 = #11111E
 darkblue-2 = #27273D
-
-/* ========================= BACKGROUNS ========================= */ 
+/* ========================= BACKGROUNS ========================= */
 
 body
 	background-color #27273D
-	
+
 
 .background-1
 	background-image url("../img/city-1.jpg")
 	opacity 0.2
 	background-size cover
 	height 810px
-	
+
 .background-2
 	background-image url("../img/city-2.jpg")
 	opacity 0.2
 	background-size cover
 	height 810px
-	
+
 .background-3
 	background-image url("../img/city-3.jpg")
 	opacity 0.2
 	background-size cover
 	height 810px
-	
+
 .background-4
 	background-image url("../img/city-4.jpg")
 	opacity 0.2
 	background-size cover
 	height 810px
-	
+
 .background-5
 	background-image url("../img/city-5.jpg")
 	opacity 0.2
 	background-size cover
 	height 810px
-	
-.diagonals
-	backgound repeating-linear-gradient(-30deg, darkblue-2 0, darkblue-2 40%, orange
-										
 
 
 
 
-
-	
-
+/* ========================= Contenido Tarjetas Kevin ========================= */
 
 
+.contenido
+	height 100%
+	border-radius 1%
+	background-color #11111E
+
+.tarjeta
+	height 100vh
+	background-image url("../img/city-5.jpg")
+
+.display-3
+	font-family Montserrat
+
+.artist
+	position relative
+	img
+		width 22rem
+
+.redes
+	position absolute
+	bottom 30px
+	left 50px
+	i
+		line-height 40px
+		height 40px
+		width 40px
+		background-color #11111E
+	a
+		color #FCB932
+
+.titulo
+	font-family Montserrat
+	font-size 50px
+	color #FCB932
+
+.nombre
+	font-family Lato
+	font-size 20px
+	color #CC8E29
+
+.descripcion
+	font-family Esteban
+	font-size 16px
+	color #ffff
+	line-height 1.5
 
 
-		
+.icono
+	display inline-block
+	margin-left 26px
+	margin-top 1em
+	text-align center
 
-	
-	
-	
+.singer
+	margin-left 0
+
+p
+	font-family Esteban
+	font-size 12px
+	color #ffff
+	margin-top 5px
+
+.song
+	margin-left 0
+	background-color #C12B41
+	height 70px
+	width 70px
+
+.col-md-5
+	padding-left 0
+	margin-left 25px
+	background-color #09090F
+	box-shadow 10px 32px 57px -21px rgba(0,0,0,1)
+
+
+.title1
+	font-family Lato
+	font-size 16px
+	span
+		font-size 14px
+		color #999999
+
+.d-flex
+	a
+		display inline-flex
+		text-decoration none
+
+
+@media only screen and (min-width: 992px)
+	.artist
+		img
+			height 100%
+
+	.songs
+		margin-bottom 3em
+
+
+
+@media only screen and (max-width: 991px)
+	.contenido
+		border-radius 0
+
+	.artist
+		img
+			box-shadow 10px 32px 57px -21px rgba(0,0,0,1)
+
+	.songs
+		margin-bottom 3em
+
+	.redes2
+		a
+			color #ffff
+
+
+@media only screen and (max-width: 320px)
+	.investor
+		margin-left 0
+
+
+
+/* ========================= Contenido Tarjetas Kevin ========================= */
