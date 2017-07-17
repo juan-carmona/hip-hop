@@ -56,8 +56,15 @@ body
 	height 100vh
 	background-image url("../img/city-5.jpg")
 
-.display-3
+.display-4
 	font-family Montserrat
+	font-size 40px
+	color #FCB932
+	background-color #11111E
+	padding 30px
+	display inline-flex
+	box-shadow 10px 32px 57px -21px rgba(0,0,0,1)
+
 
 .artist
 	position relative
@@ -133,6 +140,14 @@ p
 		display inline-flex
 		text-decoration none
 
+.carousel-indicators
+	position absolute
+	text-align -webkit-right
+	bottom 140px
+	li
+		height 30px
+		border-radius 50%
+		transform scale(.5)
 
 @media only screen and (min-width: 992px)
 	.artist
@@ -158,6 +173,18 @@ p
 	.redes2
 		a
 			color #ffff
+
+	.carousel-indicators
+		position fixed
+		bottom 0
+		background-color rgba(0,0,0,1)
+		margin-bottom 0
+		height 10%
+		align-items center
+		li
+			height 30px
+			border-radius 50%
+			transform scale(.5)
 
 
 @media only screen and (max-width: 320px)
