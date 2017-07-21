@@ -15,42 +15,7 @@ darkblue-2 = #27273D
 /* ========================= BACKGROUNS ========================= */
 
 body
-	background-color #27273D
-
-
-.background-1
-	background-image url("../img/city-1.jpg")
-	background-size cover
-	opacity 0.2
-	height 100vh
-
-
-.background-2
-	background-image url("../img/city-2.jpg")
-	opacity 0.2
-	background-size cover
-	height 100vh
-
-
-.background-3
-	background-image url("../img/city-3.jpg")
-	opacity 0.2
-	background-size cover
-	height 100vh
-
-
-.background-4
-	background-image url("../img/city-4.jpg")
-	opacity 0.2
-	background-size cover
-	height 100vh
-
-
-.background-5
-	background-image url("../img/city-5.jpg")
-	opacity 0.2
-	background-size cover
-	height 100vh
+	background-color #27273D 
 
 
 .diagonals
@@ -102,6 +67,12 @@ body
 
 .background5
 	background-image url("../img/city-5.jpg")
+	
+.tarjeta-container
+	width 100%
+	height 100vh
+	position absolute
+	z-index 9999
 
 .contenido
 	height 100%
@@ -169,8 +140,8 @@ p
 .song
 	margin-left 0
 	background-color #C12B41
-	height 70px
-	width 70px
+	height 60px
+	width 60px
 
 .col-md-5
 	padding-left 0
@@ -195,10 +166,18 @@ p
 	position absolute
 	text-align -webkit-right
 	bottom 140px
+	margin-bottom 80px
 	li
-		height 30px
+		height 8px
+		width 8px
+		margin 13px 20px
 		border-radius 50%
-		transform scale(.5)
+		text-align center
+		
+
+.carousel-indicators .active
+	transform scale(1.4, 1.4)
+	
 
 .delay-1
 	animation-delay 0.4s
