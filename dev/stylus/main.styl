@@ -18,34 +18,6 @@ body
 	background-color #27273D
 
 
-.diagonals
-	width 0
-	height 0
-	border-top 350px solid #27273D
-	border-left 550px solid #27273D
-	border-right 550px solid transparent
-	border-bottom 350px solid transparent
-	position fixed
-
-
-.diagonal-1
-	width 0
-	height 0
-	border-top 350px solid #27273D
-	border-left 550px solid #27273D
-	border-right 550px solid transparent
-	border-bottom 350px solid transparent
-	position fixed
-
-
-.diagonal-2
-	width 0
-	height 0
-	border-top 100px solid yellow
-	border-left 100px solid yellow
-	border-right 100px solid transparent
-	border-bottom 100px solid transparent
-	justify-content center
 
 
 /* ========================= Contenido Tarjetas Kevin ========================= */
@@ -53,37 +25,56 @@ body
 .background
 	height 100vh
 
+
+
 .background1
 	background-image url("../img/city-1.jpg")
+	opacity 1
+
+
 
 .background2
 	background-image url("../img/city-2.jpg")
 
+
 .background3
 	background-image url("../img/city-3.jpg")
+
 
 .background4
 	background-image url("../img/city-4.jpg")
 
+
 .background5
 	background-image url("../img/city-5.jpg")
+
 
 .tarjeta-container
 	width 100%
 	height 100vh
 	position absolute
-	z-index 99999
+	z-index 999
 	display flex
 	justify-content center
-
 
 .contenido
 	height 100%
 	border-radius 1%
 	background-color #11111E
 
+
 .tarjeta
-	justify-content center
+	z-index 9999
+
+
+.tarjeta:before
+	content ""
+	width 200%
+	height 500px
+	position absolute
+	background #27273D
+	opacity 1
+	transform rotate(-30deg) scale(0.835) skew(50deg) translate(35px,100px)
 
 
 .artist
@@ -201,6 +192,10 @@ p
 
 
 @media (max-width: 991px)
+
+	.tarjeta:before
+		display none
+
 	.tarjeta-container
 		display initial
 
