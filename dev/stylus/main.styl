@@ -25,13 +25,12 @@ body
 	height 100vh
 
 
-
 .background1
 	background-image url("../img/city-1.jpg")
-	
+
 
 .background2
-	background-image url("../img/city-2.jpg") 
+	background-image url("../img/city-2.jpg")
 
 
 .background3
@@ -65,14 +64,14 @@ body
 	z-index 9999
 
 
-/*.tarjeta:before
+.tarjeta:before
 	content ""
 	width 200%
 	height 500px
 	position fixed
 	background #27273D
 	opacity 0.5
-	transform rotate(-30deg) scale(0.835) skew(50deg) translate(35px)*/
+	transform rotate(-30deg) scale(0.835) skew(50deg) translate(35px)
 
 
 .artist
@@ -125,8 +124,6 @@ p
 .song
 	margin-left 0
 	background-color #C12B41
-	height 70px
-	width 70px
 
 .col-md-5
 	padding-left 0
@@ -158,8 +155,6 @@ p
 		margin 13px 20px
 		border-radius 50%
 
-
-
 .carousel-indicators .active
 	transform scale(1.4, 1.4)
 
@@ -176,6 +171,9 @@ p
 
 .delay-3
 	animation-delay 0.8s
+
+.delay-4
+	animation-delay 2s
 
 
 @media (min-width: 992px)
@@ -202,15 +200,35 @@ p
 
 	.row.mx-0
 		justify-content center
+		margin-top 1em
 
 	.artist
+		height 450px
+		background-size cover
+		box-shadow 10px 32px 57px -21px rgba(0,0,0,1)
 		img
-			box-shadow 10px 32px 57px -21px rgba(0,0,0,1)
-			height 300px
-			border-radius 1%
+			display none
+
+	.cent
+		background-image url("../img/50-cent.jpg")
+
+	.wiz
+		background-image url("../img/wiz-khalifa.jpg")
+
+	.ty
+		background-image url("../img/ty-dolla-sign.jpg")
+
+	.drake
+		background-image url("../img/drake.jpg")
+		background-position 0 -50px
+
+	.school
+		background-image url("../img/school-boy-q.jpg")
+		background-position 0 -150px
 
 	.songs
-		margin-bottom 3em
+		margin-top 10px !important
+		margin-bottom 1em
 
 	.redes2
 		a
@@ -230,7 +248,9 @@ p
 
 	.carousel-indicators .active
 		transform scale(.7, .7)
-	
+
+
+
 
 
 
@@ -244,6 +264,17 @@ p
 	.fp-enabled
 		overflow auto !important
 
+	.row.mx-0
+		margin-top 0
+
+	.artist
+		height 350px
+
+	.drake
+		background-position 0 -20px
+
+	.school
+		background-position 0 -90px
 
 	.carousel-indicators
 		li
@@ -256,9 +287,14 @@ p
 		margin-left 0
 
 	.artist
-		img
-			height 100%
-			width 100%
+		height 300px
+
+	.drake
+		background-position 0 0
+
+	.school
+		background-position 0 -50px
+
 
 	.carousel-indicators .active
 		transform scale(.6, .6)
