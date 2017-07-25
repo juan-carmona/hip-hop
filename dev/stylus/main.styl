@@ -149,11 +149,36 @@ p
 	text-align -webkit-right
 	bottom 140px
 	margin-bottom 80px
+	z-index 1001
 	li
 		height 8px
 		width 8px
-		margin 13px 20px
+		margin 13px 7px
 		border-radius 50%
+
+.carousel-inner
+	position relative
+
+.carousel_control
+	z-index 1000
+	position absolute
+	bottom 82px
+	margin-bottom 107px
+	right 0
+	padding-right 1.6rem
+
+.prev
+.next
+	display block
+	font-size 18px
+	color rgba(255,255,255,.5)
+	&:hover
+		color #fff
+		cursor pointer
+
+.prev
+	margin-bottom 11em
+
 
 .carousel-indicators .active
 	transform scale(1.4, 1.4)
@@ -188,6 +213,29 @@ p
 
 
 @media (max-width: 991px)
+	body
+		position relative
+		display flex
+
+	.carousel_control
+		position fixed
+		bottom 50px
+		margin-bottom 0
+
+	.prev
+	.next
+		display inline-block
+		position fixed
+		margin-top 10px
+
+	.prev
+		left 0
+		margin-left 12em
+
+	.next
+		right 0
+		margin-right 12em
+
 
 	.tarjeta:before
 		display none
@@ -244,10 +292,10 @@ p
 		li
 			height 30px
 			border-radius 50%
-			transform scale(.5)
+			transform scale(.4)
 
 	.carousel-indicators .active
-		transform scale(.7, .7)
+		transform scale(.5, .5)
 
 
 
@@ -278,8 +326,16 @@ p
 
 	.carousel-indicators
 		li
-			margin 13px 10px
+			margin 13px 5px
 
+	.carousel_control
+		bottom 45px
+
+	.prev
+		margin-left 3.5em
+
+	.next
+		margin-right 3.5em
 
 
 @media (max-width: 320px)
@@ -297,7 +353,16 @@ p
 
 
 	.carousel-indicators .active
-		transform scale(.6, .6)
+		transform scale(.5, .5)
+
+	.carousel_control
+		bottom 40px
+
+	.prev
+		margin-left 2em
+
+	.next
+		margin-right 2em
 
 
 /* ========================= Contenido Tarjetas Kevin ========================= */
