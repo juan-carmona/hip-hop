@@ -23,6 +23,7 @@ body
 
 .background
 	height 100vh
+	background-size cover
 
 
 .background1
@@ -59,22 +60,16 @@ body
 	border-radius 1%
 	background-color #11111E
 
-
-.tarjeta
-	z-index 9999
-
-.tarjeta:before
-	content ""
-	width 200%
-	height 500px
-	position fixed
-	background #27273D
-	opacity 0.5
-	transform rotate(-30deg) scale(0.835) skew(50deg) translate(35px)
-
+.Singer_info
+	display flex
+	flex-direction column
+	justify-content center
+	padding 13px 0
+	overflow hidden
 
 .artist
 	position relative
+	overflow hidden
 
 .redes
 	position absolute
@@ -102,7 +97,7 @@ body
 	font-family Esteban
 	font-size 16px
 	color #ffff
-	line-height 1.5
+	line-height 1.9
 
 
 .icono
@@ -164,7 +159,10 @@ p
 	bottom 82px
 	margin-bottom 107px
 	right 0
-	padding-right 1.6rem
+	padding-right 2.6rem
+
+.carousel-indicators
+	padding-right 2.5rem
 
 .prev
 .next
@@ -197,16 +195,13 @@ p
 	animation-delay 0.8s
 
 .delay-4
-	animation-delay 2s
+	animation-delay 1.2s
 
 @media (min-width: 992px)
 	.artist
 		img
 			height 100%
 			width: 100%;
-
-	.songs
-		margin-bottom 3em
 
 	.row.mx-0
 		min-height 580px
@@ -288,6 +283,7 @@ p
 		margin-bottom 0
 		height 7%
 		align-items center
+		padding-right 0
 		li
 			height 30px
 			border-radius 50%
