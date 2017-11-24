@@ -1,12 +1,10 @@
-// invoke the carousel
-    $('#carouselExampleIndicators').carousel({
-      interval: false
-    });
+$(document).ready(function(){
+        $(document).mousemove(function(ev){
+        	var x = -ev.clientX/50;
+        	var y = -ev.clientY/50;
 
-$('body').bind('mousewheel', function(e) {
-    if(e.originalEvent.wheelDelta /120 > 0) {
-        $(this).carousel('prev');
-    } else {
-        $(this).carousel('next');
-    }
+        	$(".background3").css({
+        		"backgroundPosition": x + "px " + y + "px"
+        	});
+        });
 });
